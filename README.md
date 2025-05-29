@@ -56,11 +56,57 @@ go get github.com/ak68a/agentid-core
 
 ## Project Structure
 
-The project is organized into several key packages:
+```
+agentid-core/
+├── contracts/           # Foundry project
+│   ├── src/            # Contract source files
+│   ├── test/           # Solidity tests
+│   ├── script/         # Deployment scripts
+│   ├── lib/            # Dependencies (forge-std)
+│   └── foundry.toml    # Foundry configuration
+├── pkg/                 # Go package code
+│   ├── key/            # Key management
+│   ├── models/         # Data models
+│   └── signer/         # Signing utilities
+├── cmd/                 # Go command-line tools
+│   └── agentid/        # Main CLI tool
+├── docs/               # Documentation
+├── scripts/            # Build and development scripts
+├── test/               # Go integration tests
+├── go.mod
+├── go.sum
+└── README.md
+```
 
-- `key/` - Core functionality for agent keypair generation and management
-- `models/` - Data structures and types for identity claims and delegations
-- `signer/` - EIP-712 compatible signing utilities for identity claims
+### Key Components
+
+- **`contracts/`**: Solidity smart contracts using Foundry
+  - `src/`: Contract source files
+  - `test/`: Solidity tests
+  - `script/`: Deployment scripts
+  - `lib/`: Dependencies (forge-std)
+
+- **`pkg/`**: Go package code
+  - `key/`: Core functionality for agent keypair generation and management
+  - `models/`: Data structures and types for identity claims and delegations
+  - `signer/`: EIP-712 compatible signing utilities for identity claims
+
+- **`cmd/`**: Go command-line tools
+  - `agentid/`: Main CLI tool (if needed)
+
+- **`docs/`**: Documentation
+  - API reference
+  - Implementation guides
+  - Security documentation
+
+- **`scripts/`**: Build and development scripts
+  - CI/CD scripts
+  - Development utilities
+  - Build helpers
+
+- **`test/`**: Go integration tests
+  - End-to-end tests
+  - Integration test utilities
 
 ## Usage
 
@@ -101,14 +147,47 @@ if err != nil {
 ### Requirements
 
 - Go 1.24.3 or later
-- Ethereum development tools (for Solidity contract development)
+- Foundry (for Solidity development)
+  ```bash
+  curl -L https://foundry.paradigm.xyz | bash
+  foundryup
+  ```
+
+### Project Structure
+
+The project is organized into several key directories:
+
+- `contracts/` - Solidity smart contracts (Foundry project)
+  - `src/` - Contract source files
+  - `test/` - Solidity tests
+  - `script/` - Deployment scripts
+  - `lib/` - Dependencies (forge-std)
+- `pkg/` - Go package code
+  - `key/` - Core functionality for agent keypair generation and management
+  - `models/` - Data structures and types for identity claims and delegations
+  - `signer/` - EIP-712 compatible signing utilities for identity claims
+- `cmd/` - Go command-line tools
+- `docs/` - Documentation
+- `scripts/` - Build and development scripts
+- `test/` - Go integration tests
 
 ### Testing
 
-Run the test suite:
-
+#### Go Tests
 ```bash
 go test ./...
+```
+
+#### Solidity Tests
+```bash
+cd contracts
+forge test
+```
+
+### Building Contracts
+```bash
+cd contracts
+forge build
 ```
 
 ## Security
