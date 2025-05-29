@@ -1,5 +1,19 @@
 # agentid-core
 
+<div align="center">
+
+![AgentID Core](https://img.shields.io/badge/AgentID-Core-blue)
+![Status](https://img.shields.io/badge/Status-Active%20Development-orange)
+![License](https://img.shields.io/badge/License-Apache%202.0-green)
+
+> 🚧 **Active Development Notice**  
+> This project is currently under active development.  
+> Core features are being implemented and tested.  
+> The Solidity components are still in progress.  
+> Not ready for production use.
+
+</div>
+
 `agentid-core` is a Go + Solidity toolkit for building secure, verifiable agent identities based on the [ACK-ID specification](https://www.agentcommercekit.com/ack-id/introduction). It implements the key building blocks needed to support permissioned, autonomous agent activity across both offchain and onchain environments.
 
 > For detailed documentation about the ACK-ID specification, trust framework, and non-technical overview, please see our [documentation](./docs/README.md).
