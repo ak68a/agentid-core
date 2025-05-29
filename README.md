@@ -76,14 +76,82 @@ Run the test suite:
 go test ./...
 ```
 
+## Security
+
+AgentID Core is designed for security-critical applications. We take security seriously and have implemented several measures to ensure the safety of our users:
+
+### Security Features
+
+- 🔒 Cryptographically secure key generation and management
+- 🛡️ EIP-712 structured data signing for human-readable signatures
+- 🔐 Hardware Security Module (HSM) support
+- 🎯 Capability-based access control
+- 🔄 Automatic key rotation support
+- 🚨 Comprehensive security monitoring and logging
+
+### Reporting Security Issues
+
+We take the security of AgentID Core seriously. If you believe you have found a security vulnerability, please report it to us as described in our [Security Policy](./SECURITY.md).
+
+**Please do not report security vulnerabilities through public GitHub issues.**
+
+### Security Best Practices
+
+When using AgentID Core, we recommend following these security best practices:
+
+1. **Key Management**
+   - Use HSMs for key storage
+   - Implement regular key rotation
+   - Use secure key backup procedures
+   - Implement proper access controls
+
+2. **Deployment**
+   - Keep all dependencies up to date
+   - Use secure communication channels
+   - Implement proper access controls
+   - Monitor for suspicious activity
+
+For more detailed security information, please see our [Security & Privacy documentation](./docs/security-privacy.md).
+
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
+
+The Apache License 2.0 provides:
+- A permissive license that allows for commercial use
+- Patent protection for contributors and users
+- Clear terms for modification and distribution
+- A strong community-oriented license
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions to AgentID Core! Please see our [Contributing Guidelines](./CONTRIBUTING.md) for more details.
 
-## Security
+### Development Process
 
-This library is designed for security-critical applications. Please report any security issues to our security team.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](./CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+## Support
+
+For support, please:
+1. Check our [documentation](./docs/README.md)
+2. Search [existing issues](https://github.com/ak68a/agentid-core/issues)
+3. Create a new issue if needed
+
+## Roadmap
+
+See our [Roadmap](./docs/ROADMAP.md) for planned features and improvements.
+
+## Acknowledgments
+
+- [Agent Commerce Kit](https://www.agentcommercekit.com) for the ACK-ID specification
+- [Ethereum Foundation](https://ethereum.org) for EIP-712
+- All our contributors and users
