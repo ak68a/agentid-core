@@ -1,0 +1,18 @@
+# AgentID CLI specific ignores
+
+# Binary
+agentid
+
+# Generated agent identity files
+agent_*.json
+
+# Generated claim files
+claim_*.json
+
+# Any other JSON files that might be generated during testing
+*_test.json
+*_demo.json
+
+# OS specific files
+.DS_Store
+Thumbs.db 

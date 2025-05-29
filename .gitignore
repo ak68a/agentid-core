@@ -1,0 +1,36 @@
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Go workspace
+/bin/
+
+# AgentID CLI specific
+cmd/agentid/agentid
+cmd/agentid/build/
+agent_*.json
+claim_*.json
+*_test.json
+*_demo.json
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~ 
