@@ -13,6 +13,27 @@
 
 This library supports the full ACK-ID lifecycle: identity creation, verification, delegation, and enforcement. It is designed to be composable with other Agent Commerce Kit protocols such as [ACK-Pay](https://www.agentcommercekit.com/ack-pay/introduction).
 
+## Enterprise Version
+
+We also offer an enterprise version of AgentID designed for traditional infrastructure environments. This version includes:
+
+- 🔐 Ed25519-based key management
+- 📜 X.509 certificate integration
+- 🏢 Enterprise PKI support
+- 🔒 Centralized verification service
+- 💾 Traditional database storage
+- 📊 Enterprise-grade monitoring and logging
+- 🛡️ Advanced security features
+
+The enterprise version is ideal for organizations that need:
+- Traditional infrastructure integration
+- Enterprise security compliance
+- PKI-based identity management
+- Centralized control and monitoring
+- Enterprise support and SLAs
+
+For inquiries about the enterprise version, please contact us at [hey@ak68a.co](mailto:hey@ak68a.co).
+
 ## Installation
 
 ```bash
