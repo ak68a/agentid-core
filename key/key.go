@@ -13,7 +13,7 @@ type AgentKey struct {
 	PrivateKey *ecdsa.PrivateKey
 	PublicKey  *ecdsa.PublicKey
 	Address    common.Address
-	DID        string // DID format: did:evmkya:0x{address}
+	DID        string // DID format: did:ackid:0x{address}
 }
 
 // Generate creates a new random keypair for an agent
@@ -50,7 +50,7 @@ func ImportFromBytes(keyBytes []byte) (*AgentKey, error) {
 func fromPrivateKey(privateKey *ecdsa.PrivateKey) *AgentKey {
 	publicKey := &privateKey.PublicKey
 	address := crypto.PubkeyToAddress(*publicKey)
-	did := fmt.Sprintf("did:evmkya:%s", address.Hex())
+	did := fmt.Sprintf("did:ackid:%s", address.Hex())
 
 	return &AgentKey{
 		PrivateKey: privateKey,
