@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ak68a/agentid-core/key"
-	"github.com/ak68a/agentid-core/models"
+	"github.com/ak68a/agentid-core/pkg/key"
+	"github.com/ak68a/agentid-core/pkg/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
